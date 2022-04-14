@@ -1,0 +1,63 @@
+body {
+    height: 100%;
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+#add_task_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+#add_task_container input {
+    width: 50%;
+}
+
+#task_list_container {
+    width: 100%;
+    margin: 0px 15px;
+}
+
+#task_list_container ul {
+    width: 100%;
+    align-items: center;
+}
+
+#task_list_container ul li {
+    width: calc(100% - 30px);
+    margin: 10px 0px;
+    border-bottom: 1px dotted gray;
+}
+
+#task_list_container ul li div input[type="text"] {
+    margin: 0px 30px;
+    width: 70%;
+    border: none;
+    font-size: 1em;
+}
+
+#task_list_container ul li div button {
+    float: right;
+}
+
+
+.text_striped {
+    text-decoration: line-through;
+    color: lightgray;
+}
